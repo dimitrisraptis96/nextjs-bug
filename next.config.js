@@ -187,20 +187,8 @@ const nextConfig = {
   //   return config;
   // },
   modularizeImports: {
-    "@chakra-ui/react": {
-      transform: "@chakra-ui/react/{{member}}",
-    },
-    "framer-motion": {
-      transform: "framer-motion/{{member}}",
-    },
     "iconoir-react": {
-      transform: "iconoir-react/{{member}}",
-    },
-    "react-redux": {
-      transform: "react-redux/{{member}}",
-    },
-    axios: {
-      transform: "axios/{{member}}",
+      transform: "iconoir-react/dist/{{member}}",
     },
   },
   webpack: (webpackConfig, { isServer, webpack }) => {
