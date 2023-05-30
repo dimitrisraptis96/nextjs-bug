@@ -214,7 +214,7 @@ const nextConfig = {
 
 module.exports = withPlugins(
   [
-    [withPWA, pwaConfig],
+    // [withPWA, pwaConfig],
     [withMdxEnhanced, mdxConfig],
   ],
   nextConfig

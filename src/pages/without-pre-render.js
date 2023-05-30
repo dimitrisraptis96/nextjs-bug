@@ -1,7 +1,6 @@
 import React from "react";
 import { Center, Text } from "@chakra-ui/react";
-import EyeClose from "iconoir-react/dist/EyeClose";
-import motion from "framer-motion/dist/es/motion";
+import { EyeClose } from "iconoir-react";
 
 export default function Page({ templates = [] }) {
   return (
