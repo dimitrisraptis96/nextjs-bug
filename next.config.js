@@ -190,6 +190,12 @@ const nextConfig = {
     "iconoir-react": {
       transform: "iconoir-react/dist/{{member}}",
     },
+    "@chakra-ui/react": {
+      transform: "@chakra-ui/{{ kebabCase member }}",
+    },
+    "framer-motion": {
+      transform: "framer-motion/{{member}}",
+    },
   },
   webpack: (webpackConfig, { isServer, webpack }) => {
     webpackConfig.plugins.push(
