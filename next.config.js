@@ -186,6 +186,23 @@ const nextConfig = {
 
   //   return config;
   // },
+  modularizeImports: {
+    "@chakra-ui/react": {
+      transform: "@chakra-ui/react/{{member}}",
+    },
+    "framer-motion": {
+      transform: "framer-motion/{{member}}",
+    },
+    "iconoir-react": {
+      transform: "iconoir-react/{{member}}",
+    },
+    "react-redux": {
+      transform: "react-redux/{{member}}",
+    },
+    axios: {
+      transform: "axios/{{member}}",
+    },
+  },
   webpack: (webpackConfig, { isServer, webpack }) => {
     webpackConfig.plugins.push(
       // Remove node: from import specifiers, because Next.js does not yet support node: scheme
